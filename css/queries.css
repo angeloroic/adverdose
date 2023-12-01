@@ -1,0 +1,309 @@
+/*** BELOW 1312px ***/
+/********************/
+
+@media (max-width: 82rem) {
+  .hero {
+    max-width: 75rem;
+    gap: 3rem;
+  }
+
+  .header-main {
+    font-size: 2.75rem;
+  }
+}
+
+/*** BELOW 1152px ***/
+
+@media (max-width: 72rem) {
+  .header-main {
+    font-size: 2.25rem;
+  }
+
+  .grid--3-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-desc {
+    font-size: 1rem;
+  }
+
+  .grid {
+    row-gap: 5rem;
+    column-gap: 3rem;
+  }
+}
+
+/*** BELOW 1008px ***/
+/********************/
+
+@media (max-width: 63rem) {
+  .section-hero,
+  .section-about,
+  .section-services,
+  .section-contact,
+  .footer {
+    padding: 4rem 2rem;
+  }
+
+  .logo {
+    height: 2rem;
+  }
+
+  .navbar-list {
+    gap: 2rem;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .hero-img {
+    width: 80%;
+  }
+
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .about-img {
+    order: 2;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+/*** BELOW 800px ***/
+/*******************/
+
+@media (max-width: 50rem) {
+  .section-hero,
+  .section-about,
+  .section-contact,
+  .footer {
+    padding: 3rem 2rem;
+  }
+
+  .header {
+    padding: 0 3rem;
+  }
+
+  .navbar-link:link,
+  .navbar-link:visited {
+    font-size: 1rem;
+  }
+
+  .header-main {
+    font-size: 1.875rem;
+    margin-bottom: 2rem;
+  }
+
+  .hero-desc {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+
+  .grid {
+    row-gap: 2rem;
+  }
+
+  .grid--3-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .header-second {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .section-services {
+    padding: 3rem 8rem;
+  }
+
+  .about-text {
+    gap: 0;
+  }
+
+  .copyright {
+    font-size: 0.75rem;
+    line-height: 1.2;
+  }
+
+  .address {
+    font-size: 0.75rem;
+  }
+
+  .social-links {
+    gap: 1rem;
+  }
+
+  .social-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  /* Mobile Nav */
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 1000;
+  }
+
+  .navbar {
+    background-color: rgba(243, 231, 248, 0.97);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    transform: translateX(100%);
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .navbar-list {
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .navbar-link:link,
+  .navbar-link:visited {
+    font-size: 1.5rem;
+  }
+
+  .nav-open .navbar {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+}
+
+/*** BELOW 592px ***/
+/*******************/
+
+@media (max-width: 37rem) {
+  .section-hero,
+  .section-about {
+    padding: 1.5rem 3rem;
+  }
+
+  .section-services {
+    padding: 1.5rem 4rem;
+  }
+
+  .hero-img {
+    width: 100%;
+  }
+
+  .about-desc {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .about-img {
+    width: 100%;
+  }
+
+  .section-contact {
+    padding: 1.5rem 2rem;
+  }
+
+  .form {
+    padding: 1.5rem 2rem;
+  }
+
+  .footer {
+    padding: 1.125rem 1.5rem;
+  }
+
+  .logo--footer {
+    height: 1.5rem;
+  }
+
+  .footer-flex {
+    gap: 0.75rem;
+  }
+
+  .copyright {
+    font-size: 0.5rem;
+    line-height: 1;
+  }
+
+  .address {
+    font-size: 0.5rem;
+  }
+
+  .social-icon {
+    height: 0.75rem;
+    width: 0.75rem;
+  }
+
+  .social-links {
+    gap: 0.75rem;
+  }
+}
+
+/*** BELOW 512px ***/
+/*******************/
+
+@media (max-width: 32rem) {
+  .section-hero,
+  .section-about,
+  .section-services {
+    padding: 2rem 2rem;
+  }
+
+  .header-main {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .header-second {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .header-third {
+    font-size: 1.375rem;
+  }
+
+  .hero {
+    gap: 1.5rem;
+  }
+
+  .hero-desc {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+  }
+
+  .btn {
+    font-size: 1rem !important;
+    padding: 0.875rem 1.75rem !important;
+  }
+
+  .section-contact {
+    padding: 1.125rem 1.5rem;
+  }
+}
